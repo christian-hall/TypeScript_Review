@@ -38,3 +38,22 @@ console.log("Grade: " + grade);
 // concatinate strings using backticks and reference varibles with ${}
 
 console.log(`Hi ${firstName} ${lastName}`); 
+
+// arrays - always dynamic, like ArrayLists
+let reviews: number[] = [5, 5, 4.5, 1, 3];
+let names: string[] = ["Alex", "Abbey", "Liz", "Brian"];
+let eightBits: boolean[] = [true, true, false, false, true, false, false, true];
+
+// for loops
+let total: number = 0;
+for (let i = 0; i < reviews.length; i++) {
+    console.log(reviews[i]);
+    if (reviews[i] > 3) {
+        console.log("pass")
+    }
+    else {
+        console.log("fail");
+    }
+    total += reviews[i];
+}
+console.log(`TOTAL SCORE: ${total}/${reviews.length * 5}`);
