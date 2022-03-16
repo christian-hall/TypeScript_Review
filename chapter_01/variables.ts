@@ -57,3 +57,8 @@ for (let i = 0; i < reviews.length; i++) {
     total += reviews[i];
 }
 console.log(`TOTAL SCORE: ${total}/${reviews.length * 5}`);
+
+while (total > 100) {
+    console.log(total);
+    total+=5;
+}
