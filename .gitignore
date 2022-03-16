@@ -1,0 +1,5 @@
+# .gitignore for my typescript practice
+
+
+# javascript files
+*.js
